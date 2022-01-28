@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "authority")
+@Table(name = "table_authority")
 @Getter
 @Setter
 @Builder

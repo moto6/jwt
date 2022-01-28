@@ -8,7 +8,7 @@ spring:
         trace: false
 
   datasource:
-    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:mem:test
     driver-class-name: org.h2.Driver
     username: sa
     password:
@@ -24,6 +24,12 @@ spring:
     defer-datasource-initialization: true
     generate-ddl: true
 
+jwt:
+  header: Authorization
+  secret: c2lsdmVybmluZS10ZWNoLXNwcmluZy1ib290LWp3dC10dXRvcmlhbC1zZWNyZXQtc2lsdmVybmluZS10ZWNoLXNwcmluZy1ib290LWp3dC10dXRvcmlhbC1zZWNyZXQK
+  token-validity-in-seconds: 86400
+
 logging:
   level:
     me.jwt: DEBUG
+
